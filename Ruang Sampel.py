@@ -64,6 +64,7 @@ elif pilihan == 4:
     print('5. Menghitung Kartu Keriting')
     print('6. Menghitung Seluruh Kartu Dengan JOKER')
     print('7. Custom')
+    print('0. Exit')
     print('')
     custom = int(input('Masukkan Pilihan : '))
 
@@ -78,7 +79,7 @@ elif pilihan == 4:
         print(k, 'Dibagi', s)
         print('Peluang terambilnya kartu AS adalah : ', kAs, '| ', f)
 
-    if custom == 2:
+    elif custom == 2:
         k = 13
         s = 52
         kwajik = (k/s)
@@ -89,7 +90,7 @@ elif pilihan == 4:
         print(k, 'Dibagi', s)
         print('Peluang terambilnya kartu WAJIK adalah : ', kwajik, '| ', f) 
 
-    if custom == 3:
+    elif custom == 3:
         k = 13
         s = 52
         khati = (k/s)
@@ -100,7 +101,7 @@ elif pilihan == 4:
         print(k, 'Dibagi', s)
         print('Peluang terambilnya kartu HATI adalah : ', khati, '| ', f)
 
-    if custom == 4:
+    elif custom == 4:
         k = 13
         s = 52
         ksekop = (k/s)
@@ -111,7 +112,7 @@ elif pilihan == 4:
         print(k, 'Dibagi', s)
         print('Peluang terambilnya kartu SEKOP adalah : ', ksekop, '| ', f)    
 
-    if custom == 5:
+    elif custom == 5:
         k = 13
         s = 52
         kkeriting = (k/s)
@@ -122,7 +123,7 @@ elif pilihan == 4:
         print(k, 'Dibagi', s)
         print('Peluang terambilnya kartu KERITING adalah : ', kkeriting, '| ', f)   
 
-    if custom == 6:
+    elif custom == 6:
         user = int(input('Masukkan Ruang Sampel / Jumlah Kartu : '))
         s = 54
         kjoker = (user/s)
@@ -133,7 +134,7 @@ elif pilihan == 4:
         print(user, 'Dibagi', s)
         print('Peluang terambilnya kartu  adalah : ', kjoker, '| ', f)
 
-    if custom == 7:
+    elif custom == 7:
         ruangsampel = int(input('Masukkan Ruang Sampel / Jumlah Kartu : '))
         semesta = int(input('Masukan Jumlah Semesta / Jumlah Seluruh Kartu : '))
         h = ruangsampel / semesta 
@@ -141,6 +142,7 @@ elif pilihan == 4:
 
         print('Peluangnya adalah : ', h)
         print('Jawaban dalam bentuk pecahan', f)
-
+    else:
+        exit()
 else:
   print('Silahkan masukan ulang')
